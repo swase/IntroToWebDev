@@ -6,8 +6,44 @@
 			-->
 <html lang="en">
 	<head>
-
 		<title>Francois's Portfolio</title>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+				caption {
+				    font-weight: bold;
+				    font-size: 1.2em;
+				    margin-bottom: 8px;
+				    color: #001524; 
+			    }
+			    
+			    table, th, td {
+				    border: 1px solid #e0fbfc;
+				    border-collapse: collapse;
+				    padding: 5px 10px;
+				    color: #e0fbfc; 
+				}
+
+				table {
+					width: 90%;
+					margin: auto;
+				}
+
+				tr {
+					height: 30px;
+				}
+				th {
+					background-color: #293241;
+					
+				}
+
+				tr:nth-child(odd) {
+				    background-color: #ee6c4d;
+				}
+				tr:nth-child(even) {
+				    background-color: #3d5a80;
+				}
+
+		</style>
 	</head>
 
 	<body>
@@ -17,23 +53,27 @@
 		
 
 		<nav>
-			<hr />
-
-			<p><a href="">Home</a></p>
-			<p><a href="projects.html">Projects</a></p>
-			<p><a href="contact.html">Contact Me</a></p>
-			<p><a href="testimonials.html">Testimonials</a></p>
-			<hr />
-			<br />
+			<p>
+			<a href="index.html">Home</a>
+			<span style="padding-left: 2em">
+				<a href="projects.html">Projects</a>
+			</span>
+			<span style="padding-left: 2em">
+				<a href="contact.html">Contact Me</a>
+			</span>
+			<span style="padding-left: 2em">
+				<a href="testimonials.html">Testimonials</a>
+			</span>
+		</p>
+			
+			
 		</nav>
 
 		
 		<section>
 			<article id="about-me">
-				<h2>
-					<i>About Me</i>
-				</h2>
-				<img src="images/portrait.jpg" width="33%" alt="portrait" />
+				<h2>About Me</h2>
+				<img src="images/portrait.jpg" width="250px" alt="portrait" />
 				<p>
 					Recent <strong> graduate </strong> from the University of Southampton. Graduated July 2020 after succesfully completing an <strong>MEng Electronics</strong> program.
 				</p>
@@ -44,10 +84,8 @@
 			</article>
 <!----------------------------------------------------------------->
 			<article id="experience">		
-				<h2>
-					<i>Past Experianeces</i>
-				</h2>
-				<img src="images/past.jpg" width="33%" alt="image of chef kneading dough">
+				<h2>Past Experianeces</h2>
+				<img src="images/past.jpg" width="300px" alt="image of chef kneading dough">
 				
 				<table width="85%">
 					<caption>Employment History</caption>
@@ -79,10 +117,8 @@
 			</article>
 <!----------------------------------------------------------------->
 			<article id="hobbies">
-				<h2>
-					<i>Hobbies</i>
-				</h2>
-				<img src="images/hobby.jpg" width="33%" alt="image of bow and arrow on grass">
+				<h2>Hobbies</h2>
+				<img src="images/hobby.jpg" width="300px" alt="image of bow and arrow on grass">
 				<ul>
 					<li>Authors</li>
 					<ol>
@@ -119,7 +155,6 @@
 
 		</section>
 		<footer>
-			<hr />
      		<p>&copy; 2020 Francois Gouws, All rights reserved.</p>
 		</footer>
 

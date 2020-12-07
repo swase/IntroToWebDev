@@ -1,0 +1,62 @@
+/*
+Creator: Francois Gouws
+Date created: 7 Dec 2020
+Date last modified: 7 Dec 2020
+*/
+
+body {
+    background-color: #f7fff7;
+    font-family: arial, helvetica, sans-serif;
+    color: #001524;
+}
+
+header, footer {
+	background-color: #084c61;
+	color: #edf2f4;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+	height: 100px;
+
+}
+footer {
+	font-size: 1.3em;
+	font-style: italic;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 4px;
+}
+
+h2 { font-style: italic;
+
+}
+
+nav {
+    
+    border-bottom: 3px dashed #546a7b;
+    margin-top: 4px;
+}
+
+a{
+	color: #ef233c;
+}
+
+a:link {
+  color: #ff9f1c;
+}
+
+/* visited link */
+a:visited {
+  color: #ee6c4d;
+}
+
+/* mouse over link */
+a:hover {
+  color: #bc4749;
+}
+
+/* selected link */
+a:active {
+  color: #d90429;
+}
