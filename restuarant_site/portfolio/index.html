@@ -3,33 +3,36 @@
 
 <head>
 	<title>Homepage</title>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
 </head>
 <body>
 
 	<header>
-		<h1 style="color:tomato; text-align: center;">Francois's Fantastic Feast</h1>	
+			Francois's Fantastic Feast
 	</header>
 
 	<nav>
-		<hr/>
-		<p>
-			<a href="index.html">Home</a>
-			<span style="padding-left: 2em">
-				<a href="menu.html">Menu</a>
-			</span>
-			<span style="padding-left: 2em">
-				<a href="contact.html">Contact Us</a>
-			</span>
-		</p>
-		<hr/>
-		<br />
+			<a href="index.html" class="btn badge-pill">Home</a>
+			<a href="menu.html" class="btn badge-pill">Menu</a>
+			<a href="contact.html" class="btn badge-pill">Contact Us</a>
 	</nav>
 
-	<section style="text-align: center;">
-		<article>
-			<img src="images/homepage.jpg" width="20%" alt="assortment of food on table" > <br/>
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-lg-4 col-md-8">
+			<img src="images/homepage.jpg" alt="assortment of food on table" class="img-fluid" >
+			</div>
+
+			<div class="col-lg-8 col-md-8">
 			<h2>Restuarant Description</h2>
-			
 			<p style="text-align: left;">
 				Situated in the heart of a bustling countryside town, the restaurant boasts a large open area where diners can relax and enjoy a meal with friends and family all while soaking up the atmosphere of the beautiful english countryside. 
 
@@ -37,26 +40,30 @@
 			<p style="text-align: left;">
 				The dresscode is smart casual and all who enjoy fantastic meals at an affordable price, a simple yet sophisticated menu gives guests promotes an relaxed an enjoyable atmosphere. We believe guests should feel at home, yet treated to fantastic delights from our talented kitchen staff and served by our friendly dining staff. 
 			</p>
-		</article>
 
-		<article>
 			<h3>Read a recent Review!</h3>
-
 			<p>
 				<a href="https://www.yelp.co.uk/biz/hays-city-store-driftwood-4?hrid=EFitFKOYsbtuDZRUiMJvjw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank"> 4-star taste, 1-star price</a>
 			</p>
-		</article>
-	</section>
+			</div>
+			
+		</div>
+	</div>
 
 	<footer>
-		<hr/>
-		<p style="text-align: center">
-			<em>111 Hilbury Crest, Tolkien's Town, TO19 3WQ </em><br/>
-			 Tel: 7777 77777
- 			
+		<p >
+			111 Hilbury Crest, Tolkien's Town, TO19 3WQ
 		</p>
-		<hr/>
+
 	</footer>
+
+
+
+	    <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!----------------------------------------------------------------------------->
 
 </body>
 </html>
