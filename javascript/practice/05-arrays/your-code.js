@@ -9,6 +9,17 @@
 // Tip: Start with 2 numbers in the array. Once the function works with 2 numbers, add a third, and so on.
 // Write your code here:
 
+function findMax(numbers) {
+	var max = -Infinity;
+
+	for(position = 0; position < numbers.length; position++) {
+		if(numbers[position] > max) {
+			max = numbers[position];
+		}
+	}
+	return max;
+}
+
 
 // Open index.html in your browser, open the JavaScript console, confirm the result.
 
@@ -32,6 +43,19 @@
 // The function should NOT alter either parameter.
 // Write your code here:
 
+function combine(arr1, arr2) {
+	var combinedArray = new Array;
+	for(var i = 0; i < arr1.length; i++) {
+		combinedArray.push(arr1[i]);
+	}
+
+	for(var j = 0; j < arr2.length; j++) {
+		combinedArray.push(arr2[j]);
+	}
+
+	return combinedArray;
+}
+
 
 
 // Uncomment the code below to verify your function is working.
@@ -53,16 +77,35 @@
 // The function should NOT alter either parameter.
 // Write your code here:
 
+function subtractArray(arr1, arr2) {
+	var result = new Array;
+
+	for(var i = 0; i < arr1.length; i++) {
+		var appears = 0;
+		for(var j = 0; j < arr2.length; j++) {
+			if(arr1[i] === arr2[j]) {
+				appears++;
+				break;
+			}
+
+		}
+		if(appears == 0) {
+			result.push(arr1[i]);
+		}
+	}
+	return result;
+}
+
 
 
 // Uncomment the code below to verify your function is working.
-// console.log("subtractArray =====");
-// var result = subtractArray([1, 2, 3, 4, 5], [2, 4, 6]);
-// console.log("expected: 1,3,5\nactual: %s", result);
-// result = subtractArray(["Neptune", "Uranus", "Saturn", "Pluto"], ["Pluto"]);
-// console.log("expected: Neptune,Uranus,Saturn\nactual: %s", result);
-// result = subtractArray([1, 2, 3, 1, 2, 3, 1, 2, 3], [1, 3]);
-// console.log("expected: 2,2,2\nactual: %s", result);
+console.log("subtractArray =====");
+var result = subtractArray([1, 2, 3, 4, 5], [2, 4, 6]);
+console.log("expected: 1,3,5\nactual: %s", result);
+result = subtractArray(["Neptune", "Uranus", "Saturn", "Pluto"], ["Pluto"]);
+console.log("expected: Neptune,Uranus,Saturn\nactual: %s", result);
+result = subtractArray([1, 2, 3, 1, 2, 3, 1, 2, 3], [1, 3]);
+console.log("expected: 2,2,2\nactual: %s", result);
 
 
 
