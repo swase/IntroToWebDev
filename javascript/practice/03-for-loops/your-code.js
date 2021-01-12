@@ -22,6 +22,10 @@ for (var n = 1; n <= 7; n++) {
 console.log("FOR ONE TO TEN");
 // Write your code here:
 
+for (var i = 1; i <= 10; i++) {
+	console.log(i);	
+}
+
 
 
 // 2. COUNT BY TWOS FROM TWO TO TWELVE
@@ -39,9 +43,9 @@ console.log("FOR ONE TO TEN");
 // 12
 console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 // Write your code here:
-
-
-
+for (var i = 2; i <= 12 ; i+=2) {
+	console.log(i);
+}
 // 3. COUNT BACKWARD FROM SIX
 // ==========================
 // Write a for loop that loops from 6 to 0, counting backward.
@@ -59,13 +63,17 @@ console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 console.log("COUNT BACKWARD FROM SIX");
 // Write your code here:
 
+for (var i = 6; i >= 0; i--) {
+	console.log(i);
+}
+
 
 
 // 4. SUM EVENS
 // ============
 // You're given two variables with numeric values:
 
-var limit = 10; // We stop looping when we reach this number.
+var limit = 8; // We stop looping when we reach this number.
 var sum = 0;    // We add even numbers to this variable.
 
 // Write a for loop that loops from 0 to limit.
@@ -77,6 +85,9 @@ var sum = 0;    // We add even numbers to this variable.
 // What happens if you set limit to a negative number?
 console.log("SUM EVENS");
 // Write your code here:
+for(var i = 0; i <= limit; i++) {
+	if(i % 2 == 0) {sum += i;}
+}
 
 console.log("limit = %s, sum = %s", limit, sum);
 
@@ -95,8 +106,15 @@ var kaisFavoriteNumber = 44;    // Kai's favorite number
 console.log("FIND A FAVORITE NUMBER");
 // Write your code here:
 
+if (winniesFavoriteNumber > kaisFavoriteNumber){
+	var larger = winniesFavoriteNumber;
+	var smaller = kaisFavoriteNumber;
+}
+else {var larger = kaisFavoriteNumber;var smaller = winniesFavoriteNumber;}
 
-
+for(var i = smaller; i <= larger; i++) {
+	console.log(i);
+}
 // CHALLENGE: WHILE LOOPS
 // ======================
 // Try solving the five tasks above with a while loop in place of a for loop.
