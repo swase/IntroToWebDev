@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice: Display Events</title>
+    <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="container">
+		<h2>Print Even Numbers in User Specified Range</h2>
+		<form name="userNumbers" class="needs-validation form-horizontal" onsubmit="return validate();" novalidate="true">
+			<div class="form-group row">
+				<label class="control-label col-sm-3" for="start">Starting Number: </label>
+				<div class="col-xs-2">
+					<input type="number" class="form-control" id="start" required="true" min="0" name="start">
+				</div>
+				<div class="invalid-feedback">
+					<p> Start must be an integer greater than/equal to zero</p>
+				</div>
+
+	
+			</div><!-- end form-group starting number -->
+
+			<div class="form-group row">
+				<label class="control-label col-sm-3" for="end">Ending Number: </label>
+				<div class="col-xs-2">
+					<input type="number" class="form-control" id="end" required="true" min="1" name="end">
+				</div>
+				<div class="invalid-feedback">End must be a positive integer
+				</div>
+
+				
+
+			</div><!-- end form-group ending number -->
+
+			<div class="form-group row">
+				<label class="control-label col-sm-3" for="step">Step: </label>
+				<div class="col-xs-2">
+					<input type="number" class="form-control" id="step" required="true" min="1" name="step">
+				</div>
+				<div class="invalid-feedback">Step must be a positive integer
+				</div>
+			</div><!-- end form-group ending number -->
+			<div class="form-group ">
+				<div class="col-sm-offset-2 col-sm-10 text-left">
+					<button type="submit" id="submitButton" class="btn btn-primary">
+						Print Numbers
+					</button>
+				</div>
+
+			</div><!-- end .form-group -->
+
+			<!--
+			<div class="form-group row">
+				<label for="isValid" class="control-label col-sm-3">Validity:</label>
+				<span id="isValid"></span>
+			</div>
+			-->
+
+			<div class="form-group">
+				<div>
+					<label id=outputLabel for="outputNumbers"></label>
+				</div>
+				<span id=outputNumbers></span>
+			</div>
+
+		</form>
+		
+	</div><!-- end .container -->
+
+	<script src="displayEvents.js"></script>
+</body>
+</html>
