@@ -1,12 +1,38 @@
-a, a:link {
-	color: #05386b;
-	text-decoration: underline;
+/** Style for Navigation bar links **/
+li>a, li>a:link {
+	color: #DADAC6;
+	text-decoration: none;
 
 }
 
-a:visited {
-	color: #379683;
+li>a:visited{
+	color: #DADAC6;
 
+}
+
+
+li>a:hover.nav-link {
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #2D322F;
+
+}
+
+li>a:visited{
+	text-decoration: none;
+}
+
+nav {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #2D322F;
+}
+
+/** Other Links**/
+
+a, a:link {
+	color: #f54242;
+	text-decoration: underline;
 }
 
 a:hover {
@@ -15,35 +41,26 @@ a:hover {
 
 }
 
+a:visited{
+	text-decoration: none;
+	color: #f57b42;
 
-nav {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background-color: #;
 }
 
-nav .btn {
-    background-color: #379863;
-    color: #fef9ff;
-}
-nav .btn:hover {
-    font-weight: bold;
-}
-
+/** Some Basic Element formatting used throughout site **/
 body {
-	background-color: #edf5e1;
-	color: #361C11;
+	background-color: #DADAC6;
+	color: #2D322F;
 
 }
 
 header, footer {
-	background-color: #379683;
-	color: #8ee4af;
+	background-color: #742810;
+	color: #DADAC6;
 	display: flex;
   	justify-content: center;
   	align-items: center;
-  	border-top: thin #05386b solid;
-  	border-bottom: thin #05386b solid;
+
 }
 
 footer {
@@ -59,16 +76,98 @@ header {
 
 }
 
-h1, h2, h3 {
-	color: #05386b;
+h1, h2, h3{
+	color: #742810;
 }
 
-.container-fluid {
-	margin-top: 15px;
-	margin-bottom: 15px;
+h4 {
+	font-weight: bold;
 }
+
 
 p {
 	max-width: 500px;
 }
 
+/** Formatting for Menu page, drinks table, Carousel **/
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: rgba(176, 142, 111, 0.8);
+}
+
+table.table {
+	table-layout: fixed;
+	text-align: left;
+	margin: 30px 30px 50px 10px;
+	vertical-align: bottom;}
+
+th,td {
+	padding: 15px;
+	vertical-align: bottom;
+}
+
+td>span {
+	font-size: large;
+}
+
+.col-xs-12 {
+	margin-top: 10px;
+}
+
+.col-md-4 {
+	margin-top: 20px;
+
+}
+.carousel-caption{
+    background: rgba(0,0,0,0.6);
+}
+.carousel-caption>p {
+	color: #ffffff;
+
+}
+.carousel-caption>h3 {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 22pt;
+}
+
+.container-fluid, .container, .container-fixed {
+	margin: 15px 30px 15px 30px;
+}
+
+
+#foodMenu {
+	background-color: rgba(176, 142, 111, 0.3);
+	padding: 20px 20px 20px 20px;
+}
+ #inquiry_info {
+ 	margin-top: 5%;
+ }
+
+ #choices {
+ 	margin-top: 5%;
+ }
+
+ .btn,.btn-primary {
+ 	background-color: rgba(45, 50, 47, 1);
+ 	color: #DADAC6;
+ 	border-color: black;
+ }
+.btn-primary:hover{
+ 	background-color:  rgba(45, 50, 47, 0.5)
+ }
+
+/** COntact Form formatting**/
+/** COlours Used
+Sandal
+#B08E6F
+
+Heavy Metal
+#2D322F, rgba(45, 50, 47, 1)
+
+Pueblo
+#742810,rgba(176, 142, 111, 1)
+
+Moon Mist
+#DADAC6
+
+**/

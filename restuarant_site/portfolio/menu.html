@@ -8,6 +8,8 @@
     <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
     <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
 
 
@@ -17,60 +19,152 @@
 <body>
 
 	<header>
-			Francois's Fantastic Feast
+			Little Corner Cafe
 	</header>
 
-	<nav>
-			<a href="index.html" class="btn badge-pill">Home</a>
-			<a href="menu.html" class="btn badge-pill">Menu</a>
-			<a href="contact.html" class="btn badge-pill">Contact Us</a>
+	<nav class="nav">
+			<ul class="nav nav-tabs">
+				  <li class="nav-item">
+				    <a class="nav-link" href="index.html"><span class="glyphicon glyphicon-home"></span>  Home</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link active" href="menu.html">Menu</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="contact.html">Contact Us</a>
+				  </li>
+			</ul>
 	</nav>
 
-	<section >
-		<article style="text-align: center">
-			<table width="75%" style="text-align: center" class="center">
-				<tr>
-					<td>
-						<strong>Burger and Fries</strong><br/>
-						Classic pub Meal, but using the finest local beef. Served with chuncky style chips or/and with salad. Enough to please any fussy eater.
-						<br/> £12.50
-					</td>
-					<td>
-						<strong>Roast Goose and Vegetables</strong><br/>
-						Crispy skin, tender goose meat, beautifully roasted potatoes, roasted apple to add to the flavour profile and a luxurious sauce to bring it all together. Perfect for Christmas time meals<br/>£25.00
+	<noscript>
+	    <style type="text/css">
+	        .pagecontainer {display:none;}
+	    </style>
+	    <div class="noscriptmsg">
+	    This site is best viewed with Javascript enabled. Javascript seems to be disabled on your browser. 
+	    </div>
+	</noscript>
 
-					</td>
-				</tr>
+	<div class="container-fixed text-left" style="max-width: 800px; text-align: left" id="menu">
+		<div id="foodMenu">
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<h4>Burger and Fries</h4>
+					<span>Classic pub Meal, but using the finest local beef. Served with chuncky style chips or/and with salad. Enough to please any fussy eater.
+							<br/> £12.50
+					</span>
+				</div>
+				
+				<div class="col-md-4 col-xs-12">
+					<h4>Roast Goose and Vegetables</h4>
+							Crispy skin, tender goose meat, beautifully roasted potatoes, roasted apple to add to the flavour profile and a luxurious sauce to bring it all together. Perfect for Christmas time meals<br/>£25.00
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<h4>Baked Cheesy Brussel Sprout Pasta</h4>
+					A rich creamy pasta bake. Fresh penne pasta made with a special mix of flour ratios to best compliment the sprouts, parmesan and ricotta.<br/>£8.50
+				</div>
+			</div><!-- end of .row div-->
 
-				<tr>
-					<td>
-						<strong>Baked Cheesy Brussel Sprout Pasta</strong><br/>
-						A rich creamy pasta bake. Fresh penne pasta made with a special mix of flour ratios to best compliment the sprouts, parmesan and ricotta.<br/>£8.50
-					</td>
-					<td>
-						<strong>Seare Salmon,new potatoes brocoli and buttery lemon sauce</strong><br/>
-						Melt in the mouth fresh Scottish salmon. Crispy skin, served with new potatoes, brolcoli and Lemony butter sauce. Simple yet delicious.<br/>
-						£13.50 
-					</td>
-				</tr>
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<h4>Seare Salmon,new potatoes brocoli and buttery lemon sauce</h4>
+					Melt in the mouth fresh Scottish salmon. Crispy skin, served with new potatoes, brolcoli and Lemony butter sauce. Simple yet delicious.<br/>
+					£13.50 
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<h4>Mussel Pilav</h4>
+					Another hearty and warming seafood dish. Providing ample volume with strong bold flavours, leaving anyone 	satisfied. <br/>
+					£12.50
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<h4>Linguine with Prawns and Mussels</h4>
+					Simple yet sophisticated dish. A balance of flavours provided by white wine, lemon, parsley a hint of garlic and topped off with some ground black pepper. A warming and fulfulling dish enjoyed during the cold nights of winter.<br/>
+					£9.50
+				</div>
+			</div><!-- end of .row div-->
+		</div>
 
-				<tr>
-					<td>
-						<strong>Mussel Pilav</strong><br/>
-						Another hearty and warming seafood dish. Providing ample volume with strong bold flavours, leaving anyone satisfied. <br/>
-						£12.50
-					</td>
-					<td>
-						<strong>Linguine with Prawns and Mussels</strong><br/>
-						Simple yet sophisticated dish. A balance of flavours provided by white wine, lemon, parsley a hint of garlic and topped off with some ground black pepper. A warming and fulfulling dish enjoyed during the cold nights of winter.<br/>
-						£9.50
-					</td>
-				</tr>
+		<div id="drinks">
+			<h3 style="margin-top: 40px">Beverages</h3>
+			<table class="table table-striped table-bordered">
+				<tbody>
+					<tr class="row">
+						<td class="col-9"><span>Root Beer</span></td>
+						<td class="col-3">$3.00</td>
+					</tr>
+					<tr class="row">
+						<td class="col-9 "><span>Lemonade</span></td>
+						<td class="col-3">$1.50</td>
+					</tr>
+					<tr class="row">
+						<td class="col-9"><span>Iced Tea</span></td>
+						<td class="col-3">1.75</td>
+					</tr>
+					<tr class="row">
+						<td class="col-9"><span>Bottled Water</span></td>
+						<td colspan="col-3">$1.25</td>
+					</tr>
+				</tbody>
+			</table><!-- end of .table div-->
+		</div>
 
-			</table>
-		</article>
-		
-	</section>
+
+<!-- Code for carousel adapted from https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
+
+	<div class="container-fluid" style="max-width: 700px;">
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <!-- Indicators -->
+	    <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	    </ol>
+
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner">
+
+	      <div class="item active">
+	        <img src="./images/bakery.jpg" alt="Baked Goods" style="width:100%;">
+	        <div class="carousel-caption">
+	          <h3>Bakery Opening</h3>
+	          <p>Come try out our popular baked goods with some coffee at our dedicated bakery next door.</p>
+	        </div>
+	      </div>
+
+	      <div class="item">
+	        <img src="./images/spices.jpg" alt="Spices" style="width:100%;">
+	        <div class="carousel-caption">
+	          <h3>Seasonal Menu</h3>
+	          <p>New spring menu from 30 March 2021. A favourite this time of year is our Salmon and Sping vegetable dish.</p>
+	        </div>
+	      </div>
+	    
+	      <div class="item">
+	        <img src="./images/specialDrink.jpg" alt="Beverage" style="width:100%;">
+	        <div class="carousel-caption">
+	          <h3>Drink Special</h3>
+	          <p>Come try our special drink LLC Special Brew. Low on calories, but high on flavour. Made using our favourite Sipsmiths Gin. </p>
+	        </div>
+	      </div>
+	  
+	    </div>
+
+	    <!-- Left and right controls -->
+	    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+	  </div>
+	</div>
+
+
+
+			
+	</div><!-- end of .container div-->
 
 	<footer>
 		<p >
@@ -83,7 +177,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 	<!----------------------------------------------------------------------------->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </body>
 </html>

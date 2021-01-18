@@ -10,25 +10,47 @@
     <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
     <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+
 </head>
 <body>
 
 	<header>
-			Francois's Fantastic Feast
+			Little Corner Cafe
 	</header>
 
-	<nav>
-			<a href="index.html" class="btn badge-pill">Home</a>
-			<a href="menu.html" class="btn badge-pill">Menu</a>
-			<a href="contact.html" class="btn badge-pill">Contact Us</a>
+	<nav class="nav">
+			<ul class="nav nav-tabs">
+				  <li class="nav-item">
+				    <a class="nav-link active" href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="menu.html">Menu</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="contact.html">Contact Us</a>
+				  </li>
+			</ul>
 	</nav>
+
+	<noscript>
+	    <style type="text/css">
+	        .pagecontainer {display:none;}
+	    </style>
+	    <div class="noscriptmsg">
+	    This site is best viewed with Javascript enabled. Javascript seems to be disabled on your browser. 
+	    </div>
+	</noscript>
+
+
 
 	<div class="container-fluid">
 		<div class="row">
 
 			<div class="col-lg-4 col-md-8">
-			<img src="images/homepage.jpg" alt="assortment of food on table" class="img-fluid" >
+			<img src="images/homepage.jpg" alt="assortment of food on table" class="img-fluid" style="text-align: left;">
 			</div>
 
 			<div class="col-lg-8 col-md-8">
@@ -47,8 +69,15 @@
 			</p>
 			</div>
 			
-		</div>
+		</div><!-- end of .row div -->
 	</div>
+	
+	<div class="jumbotron jumbotron-fluid">
+	  <div class="container">
+	    <h1 class="display-4">Exciting News</h1>
+	    <p class="lead">Due to popular demand for our baked goods, we are opening a separate bakery next door that will allow cusomers to purchase our delicious baked goods and open up more tables in our restaurant.</p>
+	  </div>
+	</div><!-- End of jumbotron -->
 
 	<footer>
 		<p >
