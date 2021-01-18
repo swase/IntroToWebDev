@@ -14,20 +14,24 @@ li>a:visited{
 li>a:hover.nav-link {
 	text-decoration: none;
 	font-weight: bold;
-	background-color: #2D322F;
+	background-color: #272727;
+	border: none;
 
 }
 
 li>a:visited{
 	text-decoration: none;
 }
-
-nav {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background-color: #2D322F;
+.nav {
+    padding: 5px 0px 5px 0px;
+    background-color: #393b3a;
+    border: none;
 }
 
+.nav-item {
+	background-color: #2D322F;
+	margin-right: 2px;
+}
 /** Other Links**/
 
 a, a:link {
@@ -46,6 +50,9 @@ a:visited{
 	color: #f57b42;
 
 }
+
+
+
 
 /** Some Basic Element formatting used throughout site **/
 body {
@@ -88,7 +95,9 @@ h4 {
 p {
 	max-width: 500px;
 }
-
+label {
+	white-space: normal;
+}
 /** Formatting for Menu page, drinks table, Carousel **/
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
    background-color: rgba(176, 142, 111, 0.8);
@@ -147,13 +156,22 @@ td>span {
  	margin-top: 5%;
  }
 
- .btn,.btn-primary {
+ .btn, .btn:focus {
  	background-color: rgba(45, 50, 47, 1);
  	color: #DADAC6;
- 	border-color: black;
+ 	border-color: #272727;
  }
-.btn-primary:hover{
- 	background-color:  rgba(45, 50, 47, 0.5)
+.btn:hover{
+ 	background-color:  #171716;
+ 	color: #DADAC6;
+ }
+
+ .btn:active{
+ 	border-color: #272727;
+ 	box-shadow: none;
+	background-color:  rgba(45, 50, 47, 0.5);
+ 	border-color: #272727;
+ 	color: #2D322F;
  }
 
 /** COntact Form formatting**/
